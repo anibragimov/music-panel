@@ -1,0 +1,168 @@
+*{
+  margin: 0;
+}
+
+@font-face{
+    font-family: 'CircularBook';
+    src: url("assets/circular-book.ttf");
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: lightsalmon
+  
+} 
+
+.container{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center
+
+}
+
+.panel{
+  margin: 30px 30px;
+  display: flex;
+  position: absolute;
+  width: 800px;
+  height: 200px;
+  background-color: whitesmoke;
+  border-radius: 30px;
+	flex-direction: row;
+	align-items: center;
+	overflow: hidden;
+}
+
+.center{
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.left{
+	margin: auto;
+	margin-left: 0;
+	padding-left: 0; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.right{
+	margin: auto ;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+
+.action-button{
+	margin: 5px;
+	border: 0;
+	background-color: transparent;
+	font-size: 25px;
+	color:lightgrey
+}
+
+.misc-button{
+	margin: 5px;
+	border: 0;
+	background-color: transparent;
+	font-size: 20px;
+	color:lightgrey
+}
+
+
+.action-button:hover{
+		color:lightblue;
+}
+
+h4{
+  font-size: 40px;
+}
+
+.name{
+	font-family: 'CircularBook', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  font-size: 25px;
+}
+
+.progress-bar{
+	height: 10px;
+	width: 350px;
+}
+
+.progress-container{
+	background-color:lightgrey;
+	border-radius: 5px;
+	cursor: pointer;
+	height: 4px;
+	width: 100%;
+	transition: width 0.1s linear;
+	transition: all 0.18s ease-in-out 0s;
+
+}
+
+.progress-container:hover{
+	height: 8px;
+	transition: height 0.1s linear
+
+}
+
+.progress{
+	max-width: 100%;
+	background-color: #6699CC;
+	border-radius: 5px;
+	height: 100%;
+	width: 10%;
+	transition: width 0.1s linear;
+}
+
+.volume-bar{
+	margin: auto;
+	width: 10px;
+	height: 100px;
+}
+
+.volume{
+	background-color: #6699CC;
+	border-radius: 5px;
+	cursor: pointer;
+	height: 100%;
+	width: 6px;
+	transition: width 0.1s linear;
+	transition: all 0.18s ease-in-out 0s;
+}
+
+.volume:hover{
+	width: 8px;
+	transition: width 0.1s linear;
+
+}
+
+.volume-container{
+	background-color:lightgrey;
+	border-radius: 5px;
+	height: 80%;
+	width: 100%;
+}
+
+
+.image-container{
+	height: 200px;
+	width: 200px;	
+	overflow: hidden;
+}
+#picture{
+	height: 100%;
+	width: 100%;	
+  object-fit: cover
+}

@@ -1,0 +1,86 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+	 crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<div class="container">
+		<div class="panel" id="panel">
+			<div class="left">
+				<div class="image-container">
+					<img id="picture" src="https://cdn.suwalls.com/wallpapers/movies/the-amazing-spider-man-2-logo-51097-2560x1440.jpg" alt="">
+				</div>			
+			</div>
+			
+			<div class="center">
+
+				<div class="name">
+					<audio id="song" src="/assets/test.mp3"></audio>
+					<h4 class="mtitle">Its on again</h4>
+					<h5 class="atitle">Alicia Keys</h5>
+				</div>
+
+				<div class="navigation">
+
+					<button id="trash" class="action-button">
+            <i class="fas fa-random"></i>
+          </button>
+
+					<button id="backward" class="action-button">
+						<i class="fas fa-backward"></i>
+					</button>
+
+					<button id="play" class="action-button">
+						<i class="fas fa-play"></i>
+					</button>
+
+					<button id="fa-forward" class="action-button">
+						<i class="fas fa-forward"></i>
+					</button>
+
+          <button id="trash" class="action-button">
+            <i class="fas fa-trash"></i>
+          </button>
+          
+				</div>
+
+				<div id="progress-bar" class="progress-bar">
+					<div id="progress-container" class="progress-container">
+						<div id="progress" class="progress"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="right">
+
+				<button id="volume-up" class="misc-button">
+            <i class="fas fa-volume-up"></i>
+        </button>
+
+				<div id="volume-bar" class="volume-bar">
+					<div id="volume" class="volume">
+						<div id="volume-container" class="volume-container"></div>
+					</div>
+				</div>
+
+				<button id="volume-down" class="misc-button">
+            <i class="fas fa-volume-down"></i>
+        </button>
+
+			</div>
+				
+		</div>
+	</div>
+
+	
+<script src="script.js"></script>
+</body>
+
+</html>
