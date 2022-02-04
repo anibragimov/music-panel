@@ -7,12 +7,15 @@ const playBtn = document.getElementById('play')
 const audio = document.getElementById('song')
 
 function setVolume(e) {
-   const height = this.clientHeight;
-   const newHeight = e.offsetY;
-   volume_amount = (newHeight - 100 )* -.01
-   volumec.style.height = `${newHeight}%`
-   audio.volume = volume_amount
+  const height = this.clientHeight;
+  const newHeight = e.offsetY;
+	volume_amount = (newHeight - 100 )* -.01
+  volumec.style.height = `${newHeight}%`
+	audio.volume = volume_amount
+
 }
+
+
 function updateProgress(e){
 			const duration = audio.duration;
       const currentTime = audio.currentTime;
